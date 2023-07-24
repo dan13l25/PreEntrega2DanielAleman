@@ -1,0 +1,407 @@
+/*index html*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header nav ul li{
+    margin: 15px 20px 25px 30px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+main{
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 8%, rgba(133,0,14,1) 84%);
+}
+.navegador div a{
+    font-size: 30px;
+    text-decoration: none;
+}
+.navegador div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Merriweather', serif;
+}
+footer nav img{
+    width: 70px;
+}
+footer nav h4{
+    font-size: 30px;
+}
+.logo{
+    width: 80px;
+    display: flex;
+    margin: 0px 45px 0px 35px;
+}
+a:link{
+    color: darkgreen;
+}
+a:visited{
+    color: rgb(255, 255, 255);
+}
+a:hover{
+    color: yellow;
+}
+a:active{
+    color: deeppink;
+}
+.barra{
+    width: 200px;
+    transition: 0.4s;
+    padding: 0px 30px;
+    text-decoration: none;
+    font-size: x-large;
+}
+.buscar div{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buscar{
+    padding: 50px;
+}
+.buscar div input{
+    border-radius: 15px;
+    font-size: 1.2rem;
+    padding: .9em 1em;
+}
+.buscar div img{
+    width: 50px;
+    height: 60px;
+    border-radius: 10px;
+}
+.que h2{
+    font-size: 50px;
+    text-align: center;
+    padding: 20px;
+    color: black;
+}
+.que p{
+    font-size: 35px;
+    text-align: center;
+    margin: 20px 20px 0px 30px;
+    color: black;
+}
+.para h2{
+    font-size: 50px;
+    text-align: center;
+    margin: 20px;
+    color: black;
+}
+.para p{
+    font-size: 35px;
+    text-align: center;
+    color: black;
+}
+h1{
+    color: white;
+}
+.mensaje{
+    padding: 0px 15px;
+}
+.comentario{
+    width: 100%;  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 500px;
+    row-gap: 25px;
+    column-gap: 25px;
+    grid-template-areas: 
+    "perro electricista"
+    "peluquero cerrajero"
+    "plomero escribano";
+}
+.comentario div{
+    border: 5px solid black;  
+}
+.perro{
+    grid-template-areas: perro;
+    grid-column: span 2;
+}
+.electricista{
+    grid-template-areas: electrcista;
+}
+.peluquero{
+    grid-template-areas: peluquero;
+}
+.cerrajero{
+    grid-template-areas: cerrajero;
+    grid-column: span 2;
+}
+.plomero{
+    grid-template-areas: plomero;
+    grid-row: span 2;
+}
+.escribano{
+    grid-template-areas: escribano;
+}
+.comentario div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+footer{
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 8%, rgba(133,0,14,1) 84%);
+}
+footer nav section{
+    display: flex;
+    justify-content: space-between;
+}
+.redes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border: 10px double black;
+    margin: 50px 0px 30px 20px;
+    color: black;
+}
+.redes a img{
+    margin: 10px 10px 10px 20px;
+}
+.seguridad{
+    margin: 50px 15px 30px 0px;
+    border: 10px double black;
+}
+.seguridad h4{
+    font-size: 35px;
+    color: black;
+}
+.seguridad p{
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+}
+.grid-item{
+    position: relative;
+    box-shadow: 13px 8px 20px 3px rgba(0,0,0,0.63);
+    -webkit-box-shadow: 13px 8px 20px 3px rgba(0,0,0,0.63);
+    -moz-box-shadow: 13px 8px 20px 3px rgba(0,0,0,0.63);
+}
+.grid-item h3{
+    position: absolute;
+    font-size: 40px;
+    top: 0;
+    text-align: center;
+    color: rgb(0, 68, 255);
+    background-color: rgba(128, 128, 128, 0.863);
+    width: 100%;
+}
+.grid-item p{
+    position: absolute;
+    bottom: 0;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+    color: rgb(16, 13, 221);
+    background-color: rgba(128, 128, 128, 0.863);
+    width: 100%;
+}
+/*contactos html*/
+.contacto{
+    display: flex;
+}
+.contacto form{
+    border: 5px solid;
+    height: 800px;
+    width: 50%;
+    margin: auto;
+    margin-top: 100px;
+    color: black;
+
+}
+.contacto form div{
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 90%;
+    font-size: 25px;
+    margin-left: 40px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+.contacto form div input{
+    font-size: 1rem;
+    padding: .8em 1em;
+    background-color: rgb(140, 235, 230);
+    border-radius: 0.4em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+.contacto form div textarea{
+    font-size: 1.1rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    background-color: rgb(140, 235, 230);
+    color: black;
+}
+/*informacion html*/
+.informacion{
+    display: flex;
+}
+.informacion section div{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 30px 0px 30px 10px;
+    color: black;
+}
+.informacion section div h2{
+    color: white;
+    font-size: 60px;
+    text-align: center;
+}
+
+.informacion section div h3{
+    font-size: 45px;
+    text-align: center;
+}
+.informacion section div p{
+    font-size: 35px;
+    text-align: center;
+}
+/*registro html*/
+.inscripcion{
+    display: flex;
+}
+.inscripcion form{
+    border: 5px solid black;
+    height: 700px;
+    width: 50%;
+    margin: auto;
+    margin-top: 100px;
+    color: black;
+}
+.inscripcion form div{
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 90%;
+    font-size: 28px;
+    margin-left: 40px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+.inscripcion form div input{
+    font-size: 1rem;
+    padding: .8em 1em;
+    border-radius: 0.4em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    background-color: rgb(140, 235, 230);
+}
+.inscripcion form div select{
+    font-size: 1rem;
+    padding: .8em 1em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    background-color: rgb(140, 235, 230);
+}
+/*servicios.html*/
+.trabajo{
+    width: 100%;  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 650px;
+    row-gap: 0px;
+    column-gap: 0px;
+    color: white;
+}
+.trabajo div{
+    margin: 35px;
+    border: 20px rgb(0, 0, 0) groove;
+    position: relative;
+}
+.trabajo div img{
+    width: 100%;
+    height: 100%;
+}
+.trabajo div p{
+    position: absolute;
+    font-size: 30px;
+    bottom: 0;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.658);
+    width: 100%;
+}
+/*ingreso*/
+.ingreso {
+    display: grid;
+}
+.ingreso form{
+    border: 5px solid;
+    height: 600px;
+    width: 50%;
+    margin: auto;
+    margin-top: 100px;
+    color: black;
+}
+.ingreso form div{
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 90%;
+    font-size: 25px;
+    margin-left: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+.ingreso form div input{
+    font-size: 1rem;
+    padding: .8em 1em;
+    background-color: rgb(140, 235, 230);
+    border-radius: 0.4em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1400px){
+    .comentario{
+        width: 100%;  
+        display: grid;
+        grid-template-columns: repeat(2,1fr) ;
+        grid-auto-rows: 500px;
+        row-gap: 25px;
+        column-gap: 25px;
+    }
+    .grid-item{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+@media screen and (max-width: 1065px){
+    .logo{
+        width: 80px;
+        display: flex;
+        margin: 0px;
+    }
+}
+@media screen and (max-width: 800px){
+    .trabajo{
+        width: 100%;  
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-auto-rows: 650px;
+        row-gap: 0px;
+        column-gap: 0px;
+        color: white;
+    }
+}
+@media screen and (max-width: 650px){
+    .comentario{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
