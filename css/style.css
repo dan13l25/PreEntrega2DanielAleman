@@ -37,6 +37,10 @@ footer nav img{
 footer nav h4{
     font-size: 30px;
 }
+.navegador .nav-derecha a:hover{
+    color: rgb(255, 251, 0);
+    transition: all 0.5s;
+}
 .logo{
     width: 80px;
     display: flex;
