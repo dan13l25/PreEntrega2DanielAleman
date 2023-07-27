@@ -1,0 +1,15 @@
+{
+  "name": "preentrega-2-daniel-aleman",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Hi 👋, I'm Daniel Aleman</h1>\r <h3 align=\"center\">A passionate frontend developer from argentina</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.0.1"
+  }
+}
