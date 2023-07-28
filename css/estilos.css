@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+footer {
+  background: #3f5efb;
+  background: radial-gradient(circle, #3f5efb 8%, #85000e 84%); }
+  footer nav section {
+    display: flex;
+    justify-content: space-between; }
+    footer nav section .redes {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      border: 7px solid black;
+      margin: 50px 0px 30px 20px;
+      color: black; }
+      footer nav section .redes h4 {
+        font-size: 35px;
+        color: black; }
+        footer nav section .redes h4 div a img {
+          width: 70px;
+          margin: 10px 10px 10px 20px; }
+    footer nav section .seguridad {
+      margin: 50px 15px 30px 0px;
+      border: 7px solid black; }
+      footer nav section .seguridad h4 {
+        font-size: 35px;
+        color: black; }
+      footer nav section .seguridad p {
+        font-size: 30px;
+        color: black;
+        font-weight: 500; }

@@ -1,3 +1,8 @@
-h2{
-    color: blueviolet;
-}
+@import "./base/generales";
+@import "./base/variables";
+@import "./components/index";
+@import "./components/contactos";
+@import "./components/informacion";
+@import "./components/ingreso";
+@import "./components/registro";
+@import "./components/servicios";
