@@ -19,12 +19,7 @@ main{
     font-size: 30px;
     font-family: 'Merriweather', serif;
 }
-footer nav img{
-    width: 70px;
-}
-footer nav h4{
-    font-size: 30px;
-}
+
 .navegador .nav-derecha a:hover{
     color: rgb(0, 26, 255);
     transition-duration: 0.6s;
@@ -33,10 +28,6 @@ footer nav h4{
     width: 80px;
     display: flex;
     margin: 0px 45px 0px 35px;
-    transition-duration: 0.4s;
-}
-.logo img:hover{
-    transform: scale(1.2);
 }
 .barra{
     width: 200px;
@@ -137,39 +128,6 @@ h1{
     height: 100%;
     object-fit: cover;
 }
-footer{
-    background: rgb(63,94,251);
-    background: radial-gradient(circle, rgba(63,94,251,1) 8%, rgba(133,0,14,1) 84%);
-}
-footer nav section{
-    display: flex;
-    justify-content: space-between;
-}
-.redes{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    border: 7px solid black;
-    margin: 50px 0px 30px 20px;
-    color: black;
-}
-.redes a img{
-    margin: 10px 10px 10px 20px;
-}
-.seguridad{
-    margin: 50px 15px 30px 0px;
-    border: 7px solid black;
-}
-.seguridad h4{
-    font-size: 35px;
-    color: black;
-}
-.seguridad p{
-    font-size: 30px;
-    color: black;
-    font-weight: 500;
-}
 .grid-item{
     position: relative;
     box-shadow: 13px 8px 20px 3px rgba(0,0,0,0.63);
@@ -195,6 +153,43 @@ footer nav section{
     background-color: rgba(128, 128, 128, 0.863);
     width: 100%;
 }
+footer{
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 8%, rgba(133,0,14,1) 84%);
+    display: flex;
+    justify-content: space-between;
+}
+.redes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border: 7px solid black;
+    margin: 50px 0px 30px 20px;
+    color: black;
+}
+.redes a img{
+    margin: 10px 10px 10px 20px;
+    width: 90px;
+}
+.redes h4{
+    font-size: 35px;
+    color: black;
+}
+.seguridad{
+    margin: 50px 15px 30px 0px;
+    border: 7px solid black;
+}
+.seguridad h4{
+    font-size: 35px;
+    color: black;
+}
+.seguridad p{
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+}
+
 /*contactos html*/
 .contacto{
     display: flex;

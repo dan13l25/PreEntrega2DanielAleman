@@ -3,33 +3,190 @@
   margin: 0;
   box-sizing: border-box; }
 
-footer {
+.navegador div a {
+  font-size: 30px;
+  text-decoration: none; }
+
+header .navegador div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 30px;
+  font-family: 'Merriweather', serif; }
+  header .navegador div a {
+    font-size: 30px;
+    text-decoration: none; }
+    header .navegador div a .logo {
+      width: 80px;
+      display: flex;
+      margin: 0px 45px 0px 35px; }
+  header .navegador div h1 {
+    color: white; }
+
+.galeria {
   background: #3f5efb;
   background: radial-gradient(circle, #3f5efb 8%, #85000e 84%); }
-  footer nav section {
-    display: flex;
-    justify-content: space-between; }
-    footer nav section .redes {
+  .galeria .que h2 {
+    font-size: 50px;
+    text-align: center;
+    padding: 20px;
+    color: black; }
+  .galeria .que p {
+    font-size: 35px;
+    text-align: center;
+    margin: 20px 20px 0px 30px;
+    color: black; }
+  .galeria .para h2 {
+    font-size: 50px;
+    text-align: center;
+    margin: 20px;
+    color: black; }
+  .galeria .para p {
+    font-size: 35px;
+    text-align: center;
+    color: black; }
+  .galeria .buscar {
+    padding: 50px; }
+    .galeria .buscar div {
+      padding: 0;
+      margin: 0;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: column;
-      border: 7px solid black;
-      margin: 50px 0px 30px 20px;
+      justify-content: center;
+      align-items: center; }
+      .galeria .buscar div input {
+        border-radius: 15px;
+        font-size: 1.2rem;
+        padding: .9em 1em; }
+      .galeria .buscar div button img {
+        width: 50px;
+        height: 60px;
+        border-radius: 10px; }
+  .galeria .comentario {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 450px;
+    row-gap: 15px;
+    column-gap: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    grid-template-areas: "perro electricista" "peluquero cerrajero" "plomero escribano"; }
+    .galeria .comentario div {
+      border: 5px solid black; }
+      .galeria .comentario div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+  .galeria .perro {
+    grid-template-areas: perro;
+    grid-column: span 2; }
+  .galeria .electricista {
+    grid-template-areas: electrcista; }
+  .galeria .peluquero {
+    grid-template-areas: peluquero; }
+  .galeria .cerrajero {
+    grid-template-areas: cerrajero;
+    grid-column: span 2; }
+  .galeria .plomero {
+    grid-template-areas: plomero;
+    grid-row: span 2; }
+  .galeria .escribano {
+    grid-template-areas: escribano; }
+  .galeria .grid-item {
+    position: relative;
+    box-shadow: 13px 8px 20px 3px rgba(0, 0, 0, 0.63);
+    -webkit-box-shadow: 13px 8px 20px 3px rgba(0, 0, 0, 0.63);
+    -moz-box-shadow: 13px 8px 20px 3px rgba(0, 0, 0, 0.63); }
+    .galeria .grid-item h3 {
+      position: absolute;
+      font-size: 40px;
+      top: 0;
+      text-align: center;
+      color: #0044ff;
+      background-color: rgba(128, 128, 128, 0.863);
+      width: 100%; }
+    .galeria .grid-item p {
+      position: absolute;
+      bottom: 0;
+      font-size: 25px;
+      text-align: center;
+      font-weight: 500;
+      color: #0044ff;
+      background-color: rgba(128, 128, 128, 0.863);
+      width: 100%; }
+
+footer {
+  background: #3f5efb;
+  background: radial-gradient(circle, #3f5efb 8%, #85000e 84%);
+  display: flex;
+  justify-content: space-between; }
+  footer .redes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border: 7px solid black;
+    margin: 50px 0px 30px 20px;
+    color: black; }
+    footer .redes a img {
+      margin: 10px 10px 10px 20px;
+      width: 90px; }
+    footer .redes h4 {
+      font-size: 35px;
       color: black; }
-      footer nav section .redes h4 {
-        font-size: 35px;
-        color: black; }
-        footer nav section .redes h4 div a img {
-          width: 70px;
-          margin: 10px 10px 10px 20px; }
-    footer nav section .seguridad {
-      margin: 50px 15px 30px 0px;
-      border: 7px solid black; }
-      footer nav section .seguridad h4 {
-        font-size: 35px;
-        color: black; }
-      footer nav section .seguridad p {
-        font-size: 30px;
-        color: black;
-        font-weight: 500; }
+  footer .seguridad {
+    margin: 50px 15px 30px 0px;
+    border: 7px solid black; }
+    footer .seguridad h4 {
+      font-size: 35px;
+      color: black; }
+    footer .seguridad p {
+      font-size: 30px;
+      color: black;
+      font-weight: 500; }
+
+@media screen and (max-width: 1400px) {
+  .comentario {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 500px;
+    row-gap: 25px;
+    column-gap: 25px; }
+  .grid-item {
+    grid-column: span 1;
+    grid-row: span 1; } }
+
+@media screen and (max-width: 1065px) {
+  .logo {
+    width: 80px;
+    display: flex;
+    margin: 0px; } }
+
+@media screen and (max-width: 800px) {
+  .trabajo {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 650px;
+    row-gap: 0px;
+    column-gap: 0px;
+    color: white; } }
+
+@media screen and (max-width: 650px) {
+  .comentario {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 15px;
+    padding-right: 15px; } }
+
+@media screen and (max-width: 1000px) {
+  footer section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-right: 15px; } }
