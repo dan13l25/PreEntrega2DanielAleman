@@ -20,11 +20,7 @@
     }
     .trabajo{
         width: 100%;  
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-auto-rows: 650px;
-        row-gap: 0px;
-        column-gap: 0px;
+        @include grid (2, 600px, 15px, 15px);
         color: $color_3;
         div{
             margin: 35px;
@@ -33,6 +29,10 @@
             img{
                 width: 100%;
                 height: 100%;
+                transition-duration: 2s;
+                &:hover{
+                    transform: scale(1.1);
+                }
             }
             p{
                 position: absolute;

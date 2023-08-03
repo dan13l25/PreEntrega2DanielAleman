@@ -10,7 +10,7 @@ main{
 .navegador{
     div{
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: center;
         font-size: 30px;
         font-family: 'Merriweather', serif;
@@ -23,9 +23,10 @@ main{
 .nav-derecha{
     .navbar-nav{
         a{
+            transition-duration: 0.9s;
             &:hover{
                 color: rgb(0, 26, 255);
-                transition-duration: 0.5s;
+                transform: scale(1.2);
             }
         }
     }

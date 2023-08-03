@@ -9,7 +9,7 @@ main {
 
 .navegador div {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   font-size: 30px;
   font-family: 'Merriweather', serif; }
@@ -17,11 +17,12 @@ main {
     font-size: 30px;
     text-decoration: none; }
 
-.nav-derecha .navbar-nav a:hover {
-  color: #001aff;
-  transition-duration: 0.5s; }
+.nav-derecha .navbar-nav a {
+  transition-duration: 0.9s; }
+  .nav-derecha .navbar-nav a:hover {
+    color: #001aff;
+    transform: scale(1.2); }
 
-/*mapa*/
 footer .redes {
   display: flex;
   justify-content: space-between;
@@ -40,7 +41,10 @@ header .navegador div {
     header .navegador div a .logo {
       width: 80px;
       display: flex;
-      margin: 0px 45px 0px 35px; }
+      margin: 0px 45px 0px 35px;
+      transition-duration: 2s; }
+      header .navegador div a .logo:hover {
+        transform: rotateX(360deg); }
   header .navegador div h1 {
     color: white; }
 
@@ -83,8 +87,8 @@ header .navegador div {
   .galeria .comentario {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 450px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 400px;
     row-gap: 15px;
     column-gap: 15px;
     padding-left: 25px;
@@ -95,7 +99,10 @@ header .navegador div {
       .galeria .comentario div img {
         width: 100%;
         height: 100%;
-        object-fit: cover; }
+        object-fit: cover;
+        transition-duration: 2s; }
+        .galeria .comentario div img:hover {
+          transform: scale(1.1); }
   .galeria .perro {
     grid-template-areas: perro;
     grid-column: span 2; }
@@ -146,7 +153,10 @@ footer {
     footer .redes a img {
       margin: 10px 10px 10px 20px;
       width: 90px;
-      border-radius: 30px; }
+      border-radius: 30px;
+      transition-duration: 1s; }
+      footer .redes a img:hover {
+        transform: scale(1.2); }
     footer .redes h4 {
       font-size: 35px;
       color: black; }
@@ -286,10 +296,10 @@ footer {
 .trabajo {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 650px;
-  row-gap: 0px;
-  column-gap: 0px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 600px;
+  row-gap: 15px;
+  column-gap: 15px;
   color: white; }
   .trabajo div {
     margin: 35px;
@@ -297,7 +307,10 @@ footer {
     position: relative; }
     .trabajo div img {
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      transition-duration: 2s; }
+      .trabajo div img:hover {
+        transform: scale(1.1); }
     .trabajo div p {
       position: absolute;
       font-size: 30px;

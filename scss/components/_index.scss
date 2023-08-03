@@ -5,7 +5,7 @@ header{
             justify-content: flex-end;
             align-items: center;
             font-size: 30px;
-            font-family: $font-family_1;
+            font-family: $font-1;
             a{
                 font-size: 30px;
                 text-decoration: none;
@@ -13,6 +13,10 @@ header{
                     width: 80px;
                     display: flex;
                     margin: 0px 45px 0px 35px;
+                    transition-duration: 2s;
+                    &:hover{
+                        transform: rotateX(360deg);
+                    }
                 }
             }
             h1{
@@ -73,11 +77,7 @@ header{
     }
     .comentario {
         width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-auto-rows: 450px;
-        row-gap: 15px;
-        column-gap: 15px;
+        @include grid (3, 400px, 15px, 15px);
         padding-left: 25px;
         padding-right: 25px;
         grid-template-areas: "perro electricista" "peluquero cerrajero" "plomero escribano";
@@ -87,6 +87,10 @@ header{
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                transition-duration: 2s;
+                &:hover{
+                    transform: scale(1.1);
+                }
             }
         }
     }
@@ -153,6 +157,10 @@ footer {
                 margin: 10px 10px 10px 20px;
                 width: 90px;
                 border-radius: 30px;
+                transition-duration: 1s;
+                &:hover{
+                    transform: scale(1.2);
+                }
             }
         }
         h4 {

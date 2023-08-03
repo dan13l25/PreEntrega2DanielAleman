@@ -7,17 +7,19 @@ $color_6: rgb(255, 255, 255);
 $background-color_1: rgba(128, 128, 128, 0.863);
 $background-color_2: #8cebe6;
 $background-color_3: rgba(0, 0, 0, 0.658);
-$font-family_1: 'Merriweather', serif;
-$font-family_2: 'Lato', sans-serif;
-/*mapa*/
-$pallete: (
-    primario: red,
-    secundario: yellow,
-    terciario: 5px green solid,
-);
+$font-1: 'Merriweather', serif;
+$font-2: 'Lato', sans-serif;
+
 %atajo{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+}
+@mixin grid ($column, $row, $row-gap, $column-gap){
+    display: grid;
+    grid-template-columns: repeat($column, 1fr);
+    grid-auto-rows: $row;
+    row-gap: $row-gap;
+    column-gap: $column-gap;
 }
