@@ -5,7 +5,7 @@ header{
             justify-content: flex-end;
             align-items: center;
             font-size: 30px;
-            font-family: 'Merriweather', serif;
+            font-family: $font-family_1;
             a{
                 font-size: 30px;
                 text-decoration: none;
@@ -16,7 +16,7 @@ header{
                 }
             }
             h1{
-                color: white;
+                color: $color_3;
             }
             
         }
@@ -30,13 +30,13 @@ header{
             font-size: 50px;
             text-align: center;
             padding: 20px;
-            color: black;
+            color: $color_2;
         }
         p{
             font-size: 35px;
             text-align: center;
             margin: 20px 20px 0px 30px;
-            color: black;
+            color: $color_2;
         }
     }
     .para{
@@ -44,12 +44,12 @@ header{
             font-size: 50px;
             text-align: center;
             margin: 20px;
-            color: black;
+            color: $color_2;
         }
         p{
             font-size: 35px;
             text-align: center;
-            color: black;
+            color: $color_2;
         }
     }
     .buscar{
@@ -121,7 +121,7 @@ header{
             font-size: 40px;
             top: 0;
             text-align: center;
-            color: rgb(0, 68, 255);
+            color: $color_4;
             background-color: rgba(128, 128, 128, 0.863);
             width: 100%;
         }
@@ -131,8 +131,8 @@ header{
             font-size: 25px;
             text-align: center;
             font-weight: 500;
-            color: rgb(0, 68, 255);
-            background-color: rgba(128, 128, 128, 0.863);
+            color: $color_5;
+            background-color: $background-color_1;
             width: 100%;
         }
     }
@@ -144,10 +144,7 @@ footer {
 	display: flex;
 	justify-content: space-between;
     .redes {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
+        @extend %atajo;
         border: 7px solid black;
         margin: 50px 0px 30px 20px;
         color: black;
@@ -155,11 +152,12 @@ footer {
             img {
                 margin: 10px 10px 10px 20px;
                 width: 90px;
+                border-radius: 30px;
             }
         }
         h4 {
             font-size: 35px;
-            color: black;
+            color: $color_2;
         }
     }
     .seguridad {
@@ -167,11 +165,12 @@ footer {
         border: 7px solid black;
         h4 {
             font-size: 35px;
-            color: black;
+            color: $color_2;
+            text-align: center;
         }
         p {
             font-size: 30px;
-            color: black;
+            color: $color_2;
             font-weight: 500;
         }
     }

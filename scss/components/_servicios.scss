@@ -25,7 +25,7 @@
         grid-auto-rows: 650px;
         row-gap: 0px;
         column-gap: 0px;
-        color: white;
+        color: $color_3;
         div{
             margin: 35px;
             border: 20px rgb(0, 0, 0) groove;
@@ -39,8 +39,8 @@
                 font-size: 30px;
                 bottom: 0;
                 text-align: center;
-                color: rgb(255, 255, 255);
-                background-color: rgba(0, 0, 0, 0.658);
+                color: $color_6;
+                background-color: $background-color_3;
                 width: 100%;
             }
         }

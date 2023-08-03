@@ -1,0 +1,23 @@
+$color_1: rgb(0, 26, 255);
+$color_2: black;
+$color_3: white;
+$color_4: rgb(0, 68, 255);
+$color_5: rgb(16, 13, 221);
+$color_6: rgb(255, 255, 255);
+$background-color_1: rgba(128, 128, 128, 0.863);
+$background-color_2: #8cebe6;
+$background-color_3: rgba(0, 0, 0, 0.658);
+$font-family_1: 'Merriweather', serif;
+$font-family_2: 'Lato', sans-serif;
+/*mapa*/
+$pallete: (
+    primario: red,
+    secundario: yellow,
+    terciario: 5px green solid,
+);
+%atajo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
