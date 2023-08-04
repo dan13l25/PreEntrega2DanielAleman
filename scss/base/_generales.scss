@@ -13,7 +13,7 @@ main{
         justify-content: space-between;
         align-items: center;
         font-size: 30px;
-        font-family: 'Merriweather', serif;
+        font-family: $font-1;
         a{
             font-size: 30px;
             text-decoration: none;
@@ -25,8 +25,66 @@ main{
         a{
             transition-duration: 0.9s;
             &:hover{
-                color: rgb(0, 26, 255);
+                color: $color_1;
                 transform: scale(1.2);
+            }
+        }
+    }
+}
+footer {
+	background: rgb(63,94,251);
+	background: radial-gradient(circle, rgba(63,94,251,1) 8%, rgba(133,0,14,1) 84%);
+	display: flex;
+	justify-content: space-between;
+    .redes {
+        @extend %atajo;
+        border: 7px solid black;
+        margin: 50px 0px 30px 20px;
+        color: black;
+        a {
+            img {
+                margin: 10px 10px 10px 20px;
+                width: 90px;
+                border-radius: 30px;
+                transition-duration: 1s;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }
+        h4 {
+            font-size: 35px;
+            color: $color_2;
+        }
+    }
+    .seguridad {
+        margin: 50px 15px 30px 0px;
+        border: 7px solid black;
+        h4 {
+            font-size: 35px;
+            color: $color_2;
+            text-align: center;
+        }
+        p {
+            font-size: 30px;
+            color: $color_2;
+            font-weight: 500;
+        }
+    }
+    .sitio{
+        margin: 50px 15px 30px 0px;
+        border: 7px solid black;
+        display: flex;
+        flex-direction: column;
+        a{
+            font-size: 20px;
+            color: $color_2;
+            text-align: start;
+            transition-duration: 1s;
+            text-decoration: none;
+            &:hover{
+                color: $color_1;
+                transform: scale(1.1);
             }
         }
     }

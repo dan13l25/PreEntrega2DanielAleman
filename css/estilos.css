@@ -1,3 +1,9 @@
+footer .redes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column; }
+
 * {
   padding: 0;
   margin: 0;
@@ -12,7 +18,7 @@ main {
   justify-content: space-between;
   align-items: center;
   font-size: 30px;
-  font-family: 'Merriweather', serif; }
+  font-family: "Merriweather", serif; }
   .navegador div a {
     font-size: 30px;
     text-decoration: none; }
@@ -23,11 +29,50 @@ main {
     color: #001aff;
     transform: scale(1.2); }
 
-footer .redes {
+footer {
+  background: #3f5efb;
+  background: radial-gradient(circle, #3f5efb 8%, #85000e 84%);
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column; }
+  justify-content: space-between; }
+  footer .redes {
+    border: 7px solid black;
+    margin: 50px 0px 30px 20px;
+    color: black; }
+    footer .redes a img {
+      margin: 10px 10px 10px 20px;
+      width: 90px;
+      border-radius: 30px;
+      transition-duration: 1s; }
+      footer .redes a img:hover {
+        transform: scale(1.2); }
+    footer .redes h4 {
+      font-size: 35px;
+      color: black; }
+  footer .seguridad {
+    margin: 50px 15px 30px 0px;
+    border: 7px solid black; }
+    footer .seguridad h4 {
+      font-size: 35px;
+      color: black;
+      text-align: center; }
+    footer .seguridad p {
+      font-size: 30px;
+      color: black;
+      font-weight: 500; }
+  footer .sitio {
+    margin: 50px 15px 30px 0px;
+    border: 7px solid black;
+    display: flex;
+    flex-direction: column; }
+    footer .sitio a {
+      font-size: 20px;
+      color: black;
+      text-align: start;
+      transition-duration: 1s;
+      text-decoration: none; }
+      footer .sitio a:hover {
+        color: #001aff;
+        transform: scale(1.1); }
 
 header .navegador div {
   display: flex;
@@ -42,9 +87,9 @@ header .navegador div {
       width: 80px;
       display: flex;
       margin: 0px 45px 0px 35px;
-      transition-duration: 2s; }
+      transition-duration: 1s; }
       header .navegador div a .logo:hover {
-        transform: rotateX(360deg); }
+        transform: rotatez(-20deg); }
   header .navegador div h1 {
     color: white; }
 
@@ -171,6 +216,20 @@ footer {
       font-size: 30px;
       color: black;
       font-weight: 500; }
+  footer .sitio {
+    margin: 50px 15px 30px 0px;
+    border: 7px solid black;
+    display: flex;
+    flex-direction: column; }
+    footer .sitio a {
+      font-size: 20px;
+      font-weight: 300;
+      color: black;
+      text-align: start;
+      transition-duration: 1s;
+      text-decoration: none; }
+      footer .sitio a:hover {
+        color: #001aff; }
 
 .contacto {
   display: flex; }
