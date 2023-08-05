@@ -23,7 +23,7 @@ main{
 .nav-derecha{
     .navbar-nav{
         a{
-            transition-duration: 0.9s;
+            transition-duration: 0.7s;
             &:hover{
                 color: $color_1;
                 transform: scale(1.2);

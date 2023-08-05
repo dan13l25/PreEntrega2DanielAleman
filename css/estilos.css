@@ -24,7 +24,7 @@ main {
     text-decoration: none; }
 
 .nav-derecha .navbar-nav a {
-  transition-duration: 0.9s; }
+  transition-duration: 0.7s; }
   .nav-derecha .navbar-nav a:hover {
     color: #001aff;
     transform: scale(1.2); }
@@ -86,9 +86,9 @@ header .navegador div {
       width: 80px;
       display: flex;
       margin: 0px 45px 0px 35px;
-      transition-duration: 1s; }
+      transition-duration: 0.7s; }
       header .navegador div a .logo:hover {
-        transform: rotatez(-20deg); }
+        transform: rotatez(-10deg); }
   header .navegador div h1 {
     color: white; }
 
@@ -144,7 +144,7 @@ header .navegador div {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        transition-duration: 2s; }
+        transition-duration: 1s; }
         .galeria .comentario div img:hover {
           transform: scale(1.1); }
   .galeria .perro {
@@ -366,7 +366,7 @@ footer {
     .trabajo div img {
       width: 100%;
       height: 100%;
-      transition-duration: 2s; }
+      transition-duration: 1s; }
       .trabajo div img:hover {
         transform: scale(1.1); }
     .trabajo div p {

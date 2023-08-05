@@ -13,9 +13,9 @@ header{
                     width: 80px;
                     display: flex;
                     margin: 0px 45px 0px 35px;
-                    transition-duration: 1s;
+                    transition-duration: 0.7s;
                     &:hover{
-                        transform: rotatez(-20deg);
+                        transform: rotatez(-10deg);
                     }
                 }
             }
@@ -87,7 +87,7 @@ header{
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                transition-duration: 2s;
+                transition-duration: 1s;
                 &:hover{
                     transform: scale(1.1);
                 }
