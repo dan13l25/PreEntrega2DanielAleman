@@ -71,8 +71,7 @@ footer {
       transition-duration: 1s;
       text-decoration: none; }
       footer .sitio a:hover {
-        color: #001aff;
-        transform: scale(1.1); }
+        color: white; }
 
 header .navegador div {
   display: flex;
@@ -229,7 +228,7 @@ footer {
       transition-duration: 1s;
       text-decoration: none; }
       footer .sitio a:hover {
-        color: #001aff; }
+        color: white; }
 
 .contacto {
   display: flex; }
