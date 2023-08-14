@@ -39,7 +39,6 @@ footer {
     .redes {
         @extend %atajo;
         border: 7px solid black;
-        margin: 50px 0px 30px 20px;
         color: black;
         a {
             img {
@@ -58,7 +57,6 @@ footer {
         }
     }
     .seguridad {
-        margin: 50px 15px 30px 0px;
         border: 7px solid black;
         h4 {
             font-size: 35px;
@@ -72,12 +70,11 @@ footer {
         }
     }
     .sitio{
-        margin: 50px 15px 30px 0px;
         border: 7px solid black;
         display: flex;
         flex-direction: column;
         a{
-            font-size: 20px;
+            font-size: 40px;
             color: $color_2;
             text-align: start;
             transition-duration: 1s;

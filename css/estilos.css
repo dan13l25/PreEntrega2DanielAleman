@@ -1,6 +1,6 @@
 footer .redes {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: column; }
 
@@ -36,7 +36,6 @@ footer {
   justify-content: space-between; }
   footer .redes {
     border: 7px solid black;
-    margin: 50px 0px 30px 20px;
     color: black; }
     footer .redes a img {
       margin: 10px 10px 10px 20px;
@@ -49,7 +48,6 @@ footer {
       font-size: 35px;
       color: black; }
   footer .seguridad {
-    margin: 50px 15px 30px 0px;
     border: 7px solid black; }
     footer .seguridad h4 {
       font-size: 35px;
@@ -60,12 +58,11 @@ footer {
       color: black;
       font-weight: 500; }
   footer .sitio {
-    margin: 50px 15px 30px 0px;
     border: 7px solid black;
     display: flex;
     flex-direction: column; }
     footer .sitio a {
-      font-size: 20px;
+      font-size: 40px;
       color: black;
       text-align: start;
       transition-duration: 1s;
@@ -143,7 +140,6 @@ header .navegador div {
       .galeria .comentario div img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
         transition-duration: 1s; }
         .galeria .comentario div img:hover {
           transform: scale(1.1); }
@@ -191,8 +187,10 @@ footer {
   display: flex;
   justify-content: space-between; }
   footer .redes {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 50px 15px 30px 0px;
     border: 7px solid black;
-    margin: 50px 0px 30px 20px;
     color: black; }
     footer .redes a img {
       margin: 10px 10px 10px 20px;
@@ -205,7 +203,9 @@ footer {
       font-size: 35px;
       color: black; }
   footer .seguridad {
-    margin: 50px 15px 30px 0px;
+    padding: 50px 15px 30px 0px;
+    margin-top: 50px;
+    margin-bottom: 30px;
     border: 7px solid black; }
     footer .seguridad h4 {
       font-size: 35px;
@@ -216,16 +216,18 @@ footer {
       color: black;
       font-weight: 500; }
   footer .sitio {
-    margin: 50px 15px 30px 0px;
+    padding: 50px 15px 30px 0px;
+    margin-top: 50px;
+    margin-bottom: 30px;
     border: 7px solid black;
     display: flex;
     flex-direction: column; }
     footer .sitio a {
-      font-size: 20px;
-      font-weight: 300;
+      font-family: "Merriweather", serif;
+      font-size: 30px;
       color: black;
       text-align: start;
-      transition-duration: 1s;
+      transition-duration: 0.8s;
       text-decoration: none; }
       footer .sitio a:hover {
         color: white; }
@@ -401,9 +403,18 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    padding-left: 15px;
-    padding-right: 15px; } }
+    flex-direction: column; }
+    footer .redes {
+      width: 345px; }
+    footer .seguridad {
+      width: 345px;
+      text-align: center; }
+    footer .sitio {
+      width: 345px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; } }
 
 @media screen and (max-width: 800px) {
   main .trabajo {
@@ -418,8 +429,19 @@ footer {
 @media screen and (max-width: 650px) {
   .galeria .comentario {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    width: 450px;
+    padding-left: 15px;
+    padding-right: 15px; } }
+
+@media screen and (max-width: 460px) {
+  .galeria .comentario {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 340px;
     padding-left: 15px;
     padding-right: 15px; } }

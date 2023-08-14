@@ -35,8 +35,21 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding-left: 15px;
-        padding-right: 15px;
+		.redes{
+			width: 345px;
+
+		}
+		.seguridad{
+			width: 345px;
+			text-align: center;
+		}
+		.sitio{
+			width: 345px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
 	}
 }
 @media screen and (max-width: 800px){
@@ -56,13 +69,25 @@
 	.galeria{
 		.comentario{
 			display: flex;
-			justify-content: space-between;
+			justify-content: center;
 			flex-direction: column;
-			align-items: flex-start;
+			align-items: center;
+			width: 450px;
 			padding-left: 15px;
 			padding-right: 15px;
-			.grid-item{
-			}
+		}
+	}
+}
+@media screen and (max-width: 460px){
+	.galeria{
+		.comentario{
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+			width: 340px;
+			padding-left: 15px;
+			padding-right: 15px;
 		}
 	}
 }
