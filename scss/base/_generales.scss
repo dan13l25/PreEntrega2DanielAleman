@@ -38,6 +38,8 @@ footer {
 	justify-content: space-between;
     .redes {
         @extend %atajo;
+        margin: 50px 0px 40px 30px;
+        padding: 50px 15px 30px 0px;
         border: 7px solid black;
         color: black;
         a {
@@ -51,14 +53,17 @@ footer {
                 }
             }
         }
-        h4 {
+        h2 {
             font-size: 35px;
             color: $color_2;
         }
     }
     .seguridad {
+        padding: 50px 15px 30px 0px;
+        margin: 50px 0px 40px 30px;
+
         border: 7px solid black;
-        h4 {
+        h2 {
             font-size: 35px;
             color: $color_2;
             text-align: center;
@@ -70,14 +75,18 @@ footer {
         }
     }
     .sitio{
+        padding: 50px 15px 30px 0px;
+        margin: 50px 30px 40px 30px;
+
         border: 7px solid black;
         display: flex;
         flex-direction: column;
         a{
-            font-size: 40px;
+            font-family: $font-1;
+            font-size: 30px;
             color: $color_2;
             text-align: start;
-            transition-duration: 1s;
+            transition-duration: 0.8s;
             text-decoration: none;
             &:hover{
                 color: $color_3;

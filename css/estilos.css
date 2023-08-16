@@ -26,7 +26,7 @@ main {
 .nav-derecha .navbar-nav a {
   transition-duration: 0.7s; }
   .nav-derecha .navbar-nav a:hover {
-    color: #001aff;
+    color: red;
     transform: scale(1.2); }
 
 footer {
@@ -35,6 +35,8 @@ footer {
   display: flex;
   justify-content: space-between; }
   footer .redes {
+    margin: 50px 0px 40px 30px;
+    padding: 50px 15px 30px 0px;
     border: 7px solid black;
     color: black; }
     footer .redes a img {
@@ -44,12 +46,14 @@ footer {
       transition-duration: 1s; }
       footer .redes a img:hover {
         transform: scale(1.2); }
-    footer .redes h4 {
+    footer .redes h2 {
       font-size: 35px;
       color: black; }
   footer .seguridad {
+    padding: 50px 15px 30px 0px;
+    margin: 50px 0px 40px 30px;
     border: 7px solid black; }
-    footer .seguridad h4 {
+    footer .seguridad h2 {
       font-size: 35px;
       color: black;
       text-align: center; }
@@ -58,14 +62,17 @@ footer {
       color: black;
       font-weight: 500; }
   footer .sitio {
+    padding: 50px 15px 30px 0px;
+    margin: 50px 30px 40px 30px;
     border: 7px solid black;
     display: flex;
     flex-direction: column; }
     footer .sitio a {
-      font-size: 40px;
+      font-family: "Merriweather", serif;
+      font-size: 30px;
       color: black;
       text-align: start;
-      transition-duration: 1s;
+      transition-duration: 0.8s;
       text-decoration: none; }
       footer .sitio a:hover {
         color: white; }
@@ -136,13 +143,14 @@ header .navegador div {
     padding-right: 25px;
     grid-template-areas: "perro electricista" "peluquero cerrajero" "plomero escribano"; }
     .galeria .comentario div {
-      border: 5px solid black; }
+      border: 5px solid black;
+      transition-duration: 0.8s; }
+      .galeria .comentario div:hover {
+        transform: scale(1.1); }
       .galeria .comentario div img {
         width: 100%;
         height: 100%;
         transition-duration: 1s; }
-        .galeria .comentario div img:hover {
-          transform: scale(1.1); }
   .galeria .perro {
     grid-template-areas: perro;
     grid-column: span 2; }
@@ -187,8 +195,7 @@ footer {
   display: flex;
   justify-content: space-between; }
   footer .redes {
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin: 50px 0px 40px 30px;
     padding: 50px 15px 30px 0px;
     border: 7px solid black;
     color: black; }
@@ -204,8 +211,7 @@ footer {
       color: black; }
   footer .seguridad {
     padding: 50px 15px 30px 0px;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin: 50px 0px 40px 30px;
     border: 7px solid black; }
     footer .seguridad h4 {
       font-size: 35px;
@@ -217,8 +223,7 @@ footer {
       font-weight: 500; }
   footer .sitio {
     padding: 50px 15px 30px 0px;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin: 50px 30px 40px 30px;
     border: 7px solid black;
     display: flex;
     flex-direction: column; }
@@ -269,7 +274,7 @@ footer {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    padding: 30px 0px 30px 10px;
+    padding: 30px 15px 30px 10px;
     color: black; }
     .informacion section div h2 {
       color: white;
@@ -330,7 +335,8 @@ footer {
         border-radius: 0.4em;
         font-family: "Lato", sans-serif;
         font-weight: 700;
-        background-color: #8cebe6; }
+        background-color: #8cebe6;
+        accent-color: #8cebe6; }
       .inscripcion form div select {
         font-size: 1rem;
         padding: .8em 1em;
@@ -357,20 +363,21 @@ footer {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 600px;
+  grid-auto-rows: 550px;
   row-gap: 15px;
   column-gap: 15px;
   color: white; }
   .trabajo div {
     margin: 35px;
     border: 20px black groove;
-    position: relative; }
+    position: relative;
+    transition-duration: 0.8s; }
+    .trabajo div:hover {
+      transform: scale(1.1); }
     .trabajo div img {
       width: 100%;
       height: 100%;
       transition-duration: 1s; }
-      .trabajo div img:hover {
-        transform: scale(1.1); }
     .trabajo div p {
       position: absolute;
       font-size: 30px;
@@ -405,16 +412,20 @@ footer {
     align-items: center;
     flex-direction: column; }
     footer .redes {
-      width: 345px; }
+      width: 345px;
+      padding-left: 35px;
+      margin: 50px 0px 40px 0px; }
     footer .seguridad {
       width: 345px;
-      text-align: center; }
+      text-align: center;
+      margin: 50px 0px 40px 0px; }
     footer .sitio {
       width: 345px;
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column; } }
+      flex-direction: column;
+      margin: 50px 0px 40px 0px; } }
 
 @media screen and (max-width: 800px) {
   main .trabajo {

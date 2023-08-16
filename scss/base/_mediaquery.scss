@@ -37,11 +37,13 @@
         flex-direction: column;
 		.redes{
 			width: 345px;
-
+			padding-left: 35px;
+			margin: 50px 0px 40px 0px;
 		}
 		.seguridad{
 			width: 345px;
 			text-align: center;
+			margin: 50px 0px 40px 0px;
 		}
 		.sitio{
 			width: 345px;
@@ -49,6 +51,7 @@
 			justify-content: center;
 			align-items: center;
 			flex-direction: column;
+			margin: 50px 0px 40px 0px;
 		}
 	}
 }
