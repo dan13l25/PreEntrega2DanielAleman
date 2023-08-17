@@ -24,12 +24,16 @@
                 background-color: $background-color_2;
                 accent-color: $background-color_2;
             }
+            label{
+                color: $color_3;
+            }
             select{
                 font-size: 1rem;
                 padding: .8em 1em;
                 font-family: $font-2;
                 font-weight: 700;
                 background-color: $background-color_2;
+                color: $color_2;
             }
         }
     }

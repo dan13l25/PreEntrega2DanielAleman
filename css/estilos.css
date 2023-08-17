@@ -73,7 +73,8 @@ footer {
       color: black;
       text-align: start;
       transition-duration: 0.8s;
-      text-decoration: none; }
+      text-decoration: none;
+      font-weight: 600; }
       footer .sitio a:hover {
         color: white; }
 
@@ -103,21 +104,21 @@ header .navegador div {
     font-size: 50px;
     text-align: center;
     padding: 20px;
-    color: black; }
+    color: white; }
   .galeria .que p {
     font-size: 35px;
     text-align: center;
     margin: 20px 20px 0px 30px;
-    color: black; }
+    color: white; }
   .galeria .para h2 {
     font-size: 50px;
     text-align: center;
     margin: 20px;
-    color: black; }
+    color: white; }
   .galeria .para p {
     font-size: 35px;
     text-align: center;
-    color: black; }
+    color: white; }
   .galeria .buscar {
     padding: 65px 0px 65px 0px;
     margin: 0;
@@ -233,7 +234,8 @@ footer {
       color: black;
       text-align: start;
       transition-duration: 0.8s;
-      text-decoration: none; }
+      text-decoration: none;
+      font-weight: 600; }
       footer .sitio a:hover {
         color: white; }
 
@@ -253,14 +255,16 @@ footer {
       font-size: 25px;
       margin-left: 40px;
       font-family: "Lato", sans-serif;
-      font-weight: 700; }
+      font-weight: 700;
+      color: white; }
       .contacto form div input {
         font-size: 1rem;
         padding: .8em 1em;
         background-color: #8cebe6;
         border-radius: 0.4em;
         font-family: "Lato", sans-serif;
-        font-weight: 700; }
+        font-weight: 700;
+        color: black; }
       .contacto form div textarea {
         font-size: 1.1rem;
         font-family: "Lato", sans-serif;
@@ -282,10 +286,14 @@ footer {
       text-align: center; }
     .informacion section div h3 {
       font-size: 45px;
-      text-align: center; }
+      text-align: center;
+      color: white; }
     .informacion section div p {
       font-size: 35px;
-      text-align: center; }
+      text-align: center;
+      color: black;
+      font-weight: bolder;
+      margin-top: 25px; }
 
 .ingreso {
   display: grid; }
@@ -311,6 +319,8 @@ footer {
         border-radius: 0.4em;
         font-family: "Lato", sans-serif;
         font-weight: 700; }
+      .ingreso form div label {
+        color: white; }
 
 .inscripcion {
   display: flex; }
@@ -337,12 +347,15 @@ footer {
         font-weight: 700;
         background-color: #8cebe6;
         accent-color: #8cebe6; }
+      .inscripcion form div label {
+        color: white; }
       .inscripcion form div select {
         font-size: 1rem;
         padding: .8em 1em;
         font-family: "Lato", sans-serif;
         font-weight: 700;
-        background-color: #8cebe6; }
+        background-color: #8cebe6;
+        color: black; }
 
 .buscar {
   padding: 65px 0px 65px 0px;
